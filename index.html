@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cosmic Portal</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="scene-container" aria-label="Cosmic portal 3D animation"></div>
+
+    <div id="hud" role="region" aria-label="Animation controls">
+      <h1>Cosmic Portal</h1>
+      <div class="row">
+        <button id="btn-pause" type="button">Pause</button>
+        <label class="slider">
+          <span>Speed</span>
+          <input id="speed" type="range" min="0" max="2" step="0.05" value="1" />
+        </label>
+      </div>
+      <div class="row toggles">
+        <label><input type="checkbox" id="tgl-particles" checked /> Particles</label>
+        <label><input type="checkbox" id="tgl-rings" checked /> Rings</label>
+        <label><input type="checkbox" id="tgl-stars" checked /> Stars</label>
+      </div>
+      <p class="hint">Move the mouse for parallax &middot; click to pulse &middot; Space to pause</p>
+    </div>
+
+    <div id="webgl-error" hidden>
+      <p>WebGL is not available in this browser, so the 3D scene cannot start.</p>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+# Dependencies - reinstall with `npm install`
+node_modules/
+
+# Build output - regenerate with `npm run build`
+dist/
+
+# Playwright test screenshots/artifacts
+test-results/
+playwright-report/
+
+# Editor / OS clutter
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
